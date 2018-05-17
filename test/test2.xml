@@ -1,0 +1,30 @@
+<CMCORE 
+	xmlns="http://www.cm-inv.com/CMINV/2015/10"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.cm-inv.com/CMINV/2015/10 CMCORE1.0.xsd"> 
+					<CMAPI0001Rq>
+						<CommonRqHdr>
+							<SPName>这个</SPName> 
+							<RqUID>b2ebd12a-136b-43wb-s3a1-d9114c481ac2</RqUID> 
+							<NumTranCode>000823</NumTranCode>
+							<ClearDate>20160405</ClearDate> 
+							<TranDate>20160405</TranDate> 
+							<TranTime>151440</TranTime> 
+							<ChannelId>0000</ChannelId> 
+							<Version>1.0</Version>
+						</CommonRqHdr>
+                      <idNo>410221199005169930</idNo>
+                      <idType>I</idType>
+                      <name>那个</name>
+                      <cardNo>6225182222222222</cardNo>
+                      <cardType>DEBIT</cardType>
+                      <bankCode>0015</bankCode>
+                      <bankMobile>1872135xxxxx</bankMobile>
+                      <provCode>24</provCode>
+                      <provName>上海市</provName>
+                      <cityCode>240001</cityCode>
+                      <cityName>上海市</cityName>
+                      <userId>666666</userId>
+                      <mobile>187213xxxxx</mobile>
+					</CMAPI0001Rq>
+				</CMCORE>
