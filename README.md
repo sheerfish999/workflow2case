@@ -3,7 +3,7 @@
 
 ## 安装
 
-python环境 3.x \
+python环境 3.x
 
 ```bash
 pip install HTMLParser
@@ -13,7 +13,7 @@ pip install lxml
 
 ## 样例
 
-流程图效果 \
+流程图效果
 
 ![](https://github.com/sheerfish999/workflow2case/blob/master/example.jpg) 
 
@@ -30,7 +30,7 @@ lastpath=xmind2path(xmindfile, endtitle)
 
 ### 生成的逻辑脚本
 
-case 目录下  case_code.py: \
+case 目录下  case_code.py:
 
 ```python
 
