@@ -3,34 +3,34 @@
 
 ## 安装
 
-python环境 3.x\<br> 
-'''bash
+python环境 3.x \
+```bash
 pip install HTMLParser
 pip install lxml
 
-'''
+```
 
 ## 样例
 
-流程图效果\<br>  
+流程图效果 \ 
 ![](https://github.com/sheerfish999/workflow2case/example.png) 
 
 ### 调用方法（参考xmind2case.py）
 
-'''python
+```python
 
 xmindfile="test.xmind"
 endtitle="Stop"
 
 lastpath=xmind2path(xmindfile, endtitle)
 
-'''
+```
 
 ### 生成的逻辑脚本
 
-case 目录下  case_code.py:\<br>  
+case 目录下  case_code.py: \ 
 
-'''python
+```python
 
 Receive_Data()
 
@@ -68,7 +68,7 @@ if a=="N":
 	Report_Errors()
 
 
-'''
+```
 
 ### 生成的遍历路径
 
@@ -76,11 +76,11 @@ if a=="N":
 
 ## 基本绘图要求
 
-1） 使用xmind中workflow类型，只能有一个起始入口和结束点\<br>  
+1） 使用xmind中workflow类型，只能有一个起始入口和结束点 \ 
 2） 函数使用钻石型，返回判断条件使圆形，过程使用圆角矩形
 
 ### 未来计划支持
 
-1)  处理回环\<br>  
-2） 支持 else 逻辑条件
+1)  处理回环 \ 
+2) 支持 else 逻辑条件
 
