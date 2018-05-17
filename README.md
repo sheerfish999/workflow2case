@@ -13,7 +13,7 @@ pip install lxml
 ## 样例
 
 流程图效果 \
-![](https://github.com/sheerfish999/workflow2case/blob/master/example.png) 
+![](https://github.com/sheerfish999/workflow2case/blob/master/example.jpg) 
 
 ### 调用方法（参考xmind2case.py）
 
