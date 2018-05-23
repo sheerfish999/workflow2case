@@ -37,8 +37,6 @@ def list2xml(lists,endtitle):
 	## 创建起始节点
 	filename="null.xml"
 
-	xmldoc=XmlDocment(filename)	
-
 	start_node_id=lists[0][1]
 	start_node_value=lists[0][0]
 
@@ -49,6 +47,7 @@ def list2xml(lists,endtitle):
 	#xpath='//start'
 	xpath='//node_' + start_node_id
 
+	xmldoc=XmlDocment(filename)	
 	ele_lists=xmldoc.ele_list(xpath)
 	start_node=ele_lists[0]
 
@@ -522,7 +521,7 @@ def xml2_script():
 
 ###########################################  完整处理过程
 
-# xpath 文件名，终点特征
+# xmind 文件名，终点特征
 
 def xmind2path(xmindfile, endtitle):
 
