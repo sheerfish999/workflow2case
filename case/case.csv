@@ -1,0 +1,5 @@
+1,Receive_Data(),Verify_Data(),a=test(),如果/前置 a="Y",b=Transform(a),如果/前置 b>1,Load()
+2,Receive_Data(),Verify_Data(),a=test(),如果/前置 a="Y",b=Transform(a),c=select1(),如果/前置 c=5,e=select2(c),如果/前置 e>=5,d=select4(c),如果/前置 d<=8,runit()
+3,Receive_Data(),Verify_Data(),a=test(),如果/前置 a="Y",b=Transform(a),c=select1(),如果/前置 c=2,d=select3(c),如果/前置 d>8,runit()
+4,Receive_Data(),Verify_Data(),a=test(),如果/前置 a="Y",b=Transform(a),c=select1(),如果/前置 c=2,d=select3(c),如果/前置 d<=8,runit()
+5,Receive_Data(),Verify_Data(),a=test(),如果/前置 a="N",Report_Errors()

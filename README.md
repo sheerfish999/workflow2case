@@ -75,6 +75,7 @@ if a=="N":
 ### 生成的遍历路径
 
 生成的 case 目录下各个 casen_path.py
+case 目录下 case.csv
 
 ## 基本绘图要求
 

@@ -255,7 +255,7 @@ def pathlist2_scipts(pathlist):
 
 	casetitle="case"
 
-	##### 生成 按照路径拆分逻辑脚本   ------  这段暂时意义不大
+	##### 生成 按照路径拆分逻辑脚本   ----- 一般用不到
 
 	"""
 
@@ -305,17 +305,19 @@ def pathlist2_scipts(pathlist):
 		f.writelines(script)
 		f.close()	
 
+
 	"""
 
+	###### 生成 完全遍历的各个脚本 及手工测试用例， 前者可用于自动化遍历，后者可用于手工遍历
 
-	###### 生成 完全遍历的脚本
-
+	csv=""
 
 	for i in range(len(pathlist)):
 
 		filepath=casepath+"/" + casetitle + str(i) + "_path.py"
-
 		script=""
+
+		csv=csv + str(i+1)
 
 		for ii in range(len(pathlist[i])):
 
@@ -327,6 +329,7 @@ def pathlist2_scipts(pathlist):
 				if cmd_name[-1:]!=")":
 					cmd_name=cmd_name+"()"
 				script=script +cmd_name + "\n"
+				csv=csv + "," + cmd_name
 
 
 			## 函数
@@ -334,19 +337,31 @@ def pathlist2_scipts(pathlist):
 				if cmd_name[-1:]!=")":
 					cmd_name=cmd_name+"()"
 				script=script  + cmd_name + "\n"
-			
+				csv=csv + "," + cmd_name
+
 			## 判断
 			if cmd_type=="select":
+				csv=csv + "," + "如果/前置 "  + cmd_name
 				pass
 
-
+		## 路径脚本
 		f=open(filepath,"w")
 		f.writelines(script)
-		f.close()	
+		f.close()
+
+		csv=csv + "\n"
+
+
+	## CSV 手工用例
+	csvpath=casepath+"/" + casetitle + ".csv"
+
+	f=open(csvpath,"w")
+	f.writelines(csv)
+	f.close()	
 
 
 
-##### 全逻辑脚本,  利用 xml 文件结构和特征
+##### 全逻辑脚本,  利用 xml 文件结构和特征  可用于可视化编程
 
 def xml2_script():
 
